@@ -4,7 +4,6 @@ This is a Pytorch implementation of ASD-VAE:  Incomplete Graph Learning via Attr
 
 More details of the paper and dataset will be released after it is published.
 
-[TOC]
 
 # The Code
 
@@ -76,7 +75,7 @@ For train your own model, you can use main.py with some options to specify datas
 We provide more options for you for further study:
 
 - ```tex
-  --attack_ratio      # The ratio for attacking graph adjacency matrix
+  --attack_ratio    # The ratio for attacking graph adjacency matrix
   --r_type			# Attack type such as flip/add/remove
   --use_lcc			# Test on the connectivity graph
   --split_train		# Use one optimizer for fix and predict

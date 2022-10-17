@@ -19,24 +19,24 @@ Note that ``pytorch >=1.10``.
 
 ```tex
 └── code-and-data
-    ├── data                # Including datasets-Amazon and Planetoid
-    ├── models					 # The core source code of our model SPGCL
-    │   |──  _init_.py	         # Initialization file for models
-    │   |──  ASD_VAE.py	         # Including "fix" model in ASD-VAE    
-    │   |──  gnn.py	             # Including "predict" models of GNNs 
-    ├── structure_data			 # Contains Euclidean structute by one-hot or d2c 
-    ├── utils					 # Defination of auxiliary functions for running
-    │   |──  _init_.py	         # Initialization file for utils
-    │   |──  data_utils.py	     # Data load and process preparation    
-    │   |──  missing.py	         # Generate two types of missing masks
-    │   |──  plot_TSNE.py	     # Visualization of graph embedding
-    │   |──  gen_structure.py	 # Generate structure by using d2c code 
-    │   |──  args.py		 	 # Settings about models and loading configure files
-    ├── CONFIG					 # Datasets hyperparameter settings
-    ├── mian.py		        	 # This is the main file
-    ├── train.py  	  		     # Trainer for ASD-VAE 
-    ├── ASD-VAE.yml      		 # The python environment needed for ASD-VAE
-    └── README.md 	   		     # This document
+    ├── data                    # Including datasets-Amazon and Planetoid
+    ├── models                  # The core source code of our model SPGCL
+    │   |──  _init_.py          # Initialization file for models
+    │   |──  ASD_VAE.py         # Including fix model in ASD-VAE    
+    │   |──  gnn.py             # Including predict models of GNNs 
+    ├── structure_data          # Contains Euclidean structute by one-hot or d2c 
+    ├── utils                   # Defination of auxiliary functions for running
+    │   |──  _init_.py          # Initialization file for utils
+    │   |──  data_utils.py      # Data load and process preparation    
+    │   |──  missing.py         # Generate two types of missing masks
+    │   |──  plot_TSNE.py       # Visualization of graph embedding
+    │   |──  gen_structure.py   # Generate structure by using d2c code 
+    │   |──  args.py            # Settings about models and loading configure files
+    ├── CONFIG                  # Datasets hyperparameter settings
+    ├── mian.py                 # This is the main file
+    ├── train.py                # Trainer for ASD-VAE 
+    ├── ASD-VAE.yml             # The python environment needed for ASD-VAE
+    └── README.md               # This document
 ```
 
 ## Datasets
@@ -52,9 +52,9 @@ Step 1:  Parameter settings for different datasets are all in  `./CONFIG/`
 Step 2:  Important parameters in the configuration are as follows (take Cora as example):
 
 ```tex
-nhid = 16				# The hidden unit of Graph Encoder and Predictor
-beta_2 = 0.2         	# The decoupling coefficient of negative edges, i.e., \beta_2
-filter = 'Katz'			# The filter used in Predictor and Graph Encoder, i.e., 'Res'
+nhid = 16               # The hidden unit of Graph Encoder and Predictor
+beta_2 = 0.2            # The decoupling coefficient of negative edges, i.e., \beta_2
+filter = 'Katz'         # The filter used in Predictor and Graph Encoder, i.e., 'Res'
 gan_alpha_missing = 10  # Penalty coefficient for missing attribute, i.e., \alpha_D
 ```
 
@@ -75,9 +75,9 @@ For train your own model, you can use main.py with some options to specify datas
 We provide more options for you for further study:
 
 - ```tex
-  --attack_ratio    # The ratio for attacking graph adjacency matrix
-  --r_type			# Attack type such as flip/add/remove
-  --use_lcc			# Test on the connectivity graph
-  --split_train		# Use one optimizer for fix and predict
-  --profile			# Experiment setting: node classification or profile
+  --attack_ratio        # The ratio for attacking graph adjacency matrix
+  --r_type              # Attack type such as flip/add/remove
+  --use_lcc             # Test on the connectivity graph
+  --split_train         # Use one optimizer for fix and predict
+  --profile             # Experiment setting: node classification or profile
   ```

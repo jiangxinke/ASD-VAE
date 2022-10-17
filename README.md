@@ -19,7 +19,7 @@ Note that ``pytorch >=1.10``.
 
 ```tex
 └── code-and-data
-    ├── data	  		    	 # Including datasets-Amazon and Planetoid
+    ├── data                # Including datasets-Amazon and Planetoid
     ├── models					 # The core source code of our model SPGCL
     │   |──  _init_.py	         # Initialization file for models
     │   |──  ASD_VAE.py	         # Including "fix" model in ASD-VAE    

@@ -81,9 +81,8 @@ We provide more options for you for further study:
   --split_train         # Use one optimizer for fix and predict
   --profile             # Experiment setting: node classification or profile
   ```
-  
-  ## Main Baseline Codes
-  
+ 
+ ## Main Baseline Codes
   - GCNMF:  "Graph Convolutional Networks for Graphs Containing Missing Features" (https://github.com/marblet/GCNmf)
   - SAT: "Learning on Attribute-Missing Graphs" (https://github.com/xuChenSJTU/SAT-master-online)
   - SVGA: "Accurate Node Feature Estimation with Structured Variational Graph Autoencoder" (https://github.com/snudatalab/SVGA)

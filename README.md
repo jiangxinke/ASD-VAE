@@ -54,7 +54,7 @@ Step 2:  Important parameters in the configuration are as follows (take Cora as 
 ```tex
 nhid = 16               # The hidden unit of Graph Encoder and Predictor
 beta_2 = 0.2            # The decoupling coefficient of negative edges, i.e., \beta_2
-filter = 'Katz'         # The filter used in Predictor and Graph Encoder, i.e., 'Res'
+filter = Katz         # The filter used in Predictor and Graph Encoder, i.e., Res
 gan_alpha_missing = 10  # Penalty coefficient for missing attribute, i.e., \alpha_D
 ```
 
@@ -66,8 +66,8 @@ Replace `"your_own_data_name"` with your own dataset name (e.g., Cora) and you c
 For train your own model, you can use main.py with some options to specify dataset, missing type, missing rate, and hyper-parameters:
 
 - ```tex
-  $ python main.py --dataset='cora'     --type='uniform' --rate=0.1
-  $ python main.py --dataset='citeseer' --type='struct'  --rate=0.9
+  ！python main.py --dataset='cora'     --type='uniform' --rate=0.1  
+  ！python main.py --dataset='citeseer' --type='struct'  --rate=0.9
   ```
 
   All the parameter settings are in `utils.args.py` and `CONFIG/` 

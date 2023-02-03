@@ -43,7 +43,7 @@ Note that ``pytorch >=1.10``.
 
 Download Cora & Citeseer datasets from https://github.com/kimiyoung/planetoid; 
 
-AmaComp & AmaPhoto datasets from https://github.com/shchur/gnn-benchmark.
+Download AmaComp & AmaPhoto datasets from https://github.com/shchur/gnn-benchmark.
 
 ## Configuration
 

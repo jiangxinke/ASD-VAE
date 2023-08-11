@@ -1,4 +1,4 @@
-This is a Pytorch implementation of ASD-VAE:  Incomplete Graph Learning via Attribute-Structure Decoupled Variational Auto-Encoder
+This is a Pytorch implementation of ASD-VAE:  Incomplete Graph Learning via Attribute-Structure Decoupled Variational Auto-Encoder.
 
 # Incomplete Graph Learning via Attribute-Structure Decoupled Variational Auto-Encoder
 

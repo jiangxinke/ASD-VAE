@@ -11,7 +11,6 @@ import numpy as np
 from sklearn.impute import SimpleImputer
 from sklearn.mixture import GaussianMixture
 
-
 class GCN(nn.Module):
     def __init__(self, nfeat, nclass, nhid=64, dropout=0.5):
         super(GCN, self).__init__()

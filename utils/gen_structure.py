@@ -7,7 +7,6 @@ import networkx as nx
 import random
 import pickle as pkl
 
-
 def prepare_structure(adj, structure_feature, use_cuda):
     # ne-hot
     if structure_feature == 'one-hot':

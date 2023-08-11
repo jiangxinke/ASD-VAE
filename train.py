@@ -3,6 +3,7 @@ version 1.0
 date 2021/02/04
 """
 import os
+
 os.environ['CUDA_VISIBLE_DEVICES']='1'
 import numpy as np
 import torch

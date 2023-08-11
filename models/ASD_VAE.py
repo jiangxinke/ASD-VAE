@@ -8,6 +8,7 @@ from torch.nn import functional as F
 from torch.distributions.normal import Normal
 import numpy as np
 
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
